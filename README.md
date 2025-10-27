@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; URL='https://tiainspired.github.io/aau/wnm249/'" />
+  <meta http-equiv="refresh" content="0; URL='https://tiainspired.github.io/aau/wnm249/mo8'" />
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
 </head>
