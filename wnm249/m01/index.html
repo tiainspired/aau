@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tia Shinholster | Portfolio Card</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #dbeafe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      max-width: 800px;
+      width: 90%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80') center/cover;
+      height: 250px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    .content {
+      padding: 2rem 2.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 0.4em;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-bottom: 1.5em;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 1em;
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="hero"></div>
+    <div class="content">
+      <h1>Tia Shinholster</h1>
+      <h2>Columbus, Georgia</h2>
+      <p>
+        Hello! My name is <strong>Tia Shinholster</strong>, and I currently live in Columbus, Georgia. 
+        I enjoy exploring new ideas, learning different skills, and applying creative 
+        problem-solving in my personal and professional life.
+      </p>
+      <p>
+        I am interested in this subject because it allows me to understand the foundations 
+        of web development and create meaningful digital experiences. Learning HTML is an 
+        essential first step toward building interactive and visually appealing websites.
+      </p>
+      <div class="footer">© 2025 Tia Shinholster</div>
+    </div>
+  </div>
+</body>
+</html>

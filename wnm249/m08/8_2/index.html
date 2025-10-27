@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspirational Quotes by Tia Shinholster</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lobster&family=Roboto:wght@300;700&family=Pacifico&family=Raleway:wght@400;800&family=Oswald:wght@500&family=Great+Vibes&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      background: #000;
+    }
+
+    body {
+      position: relative;
+    }
+
+    /* Base slide style */
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem;
+      opacity: 0;
+      transform: scale(1);
+      transition: opacity 2s ease-in-out, transform 10s ease-in-out;
+      font-size: 2rem;
+      animation: zoomIn 15s ease-in-out infinite alternate;
+      background-size: 120%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .slide.active {
+      opacity: 1;
+      transform: scale(1.05);
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+      max-width: 80%;
+    }
+
+    p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    /* Subtle zoom */
+    @keyframes zoomIn {
+      from {
+        background-size: 110%;
+      }
+      to {
+        background-size: 125%;
+      }
+    }
+
+    /* Intro Slide */
+    .intro {
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .intro h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      color: #fff4e6;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.5rem;
+      color: #ffe4b5;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    /* Quote Slides */
+    .q1 {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Playfair Display', serif;
+    }
+    .q1 h1 {
+      font-family: 'Lobster', cursive;
+      color: #f4c430;
+    }
+
+    .q2 {
+      background: linear-gradient(135deg, #ee9ca7, #ffdde1);
+      color: #333;
+      font-family: 'Pacifico', cursive;
+    }
+    .q2 p {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+    }
+
+    .q3 {
+      background: linear-gradient(120deg, #1a2a6c, #b21f1f, #fdbb2d);
+      font-family: 'Oswald', sans-serif;
+    }
+    .q3 h1 {
+      font-family: 'Great Vibes', cursive;
+      color: #f7f7f7;
+    }
+
+    .q4 {
+      background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .q4 h1 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+    }
+
+    .q5 {
+      background: linear-gradient(to right, #8360c3, #2ebf91);
+      font-family: 'Raleway', sans-serif;
+    }
+    .q5 h1 {
+      font-family: 'Lobster', cursive;
+      color: #ffefba;
+    }
+
+    .q6 {
+      background: linear-gradient(120deg, #ff6e7f, #bfe9ff);
+      color: #2c3e50;
+      font-family: 'Pacifico', cursive;
+    }
+    .q6 p {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .q7 {
+      background: linear-gradient(135deg, #141E30, #243B55);
+      font-family: 'Oswald', sans-serif;
+    }
+    .q7 h1 {
+      font-family: 'Great Vibes', cursive;
+      color: #e6b980;
+    }
+
+    .q8 {
+      background: linear-gradient(160deg, #ff758c 0%, #ff7eb3 100%);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .q8 h1 {
+      font-family: 'Pacifico', cursive;
+      color: #fffde7;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Intro Slide -->
+  <div class="slide intro active">
+    <h1>Inspirational Quotes</h1>
+    <p>by Tia Shinholster</p>
+  </div>
+
+  <!-- Quote Slides -->
+  <div class="slide q1">
+    <h1>“Believe you can and you're halfway there.”</h1>
+    <p>– Theodore Roosevelt</p>
+  </div>
+
+  <div class="slide q2">
+    <h1>“Do what you love, love what you do.”</h1>
+    <p>– Ray Bradbury</p>
+  </div>
+
+  <div class="slide q3">
+    <h1>“The best way out is always through.”</h1>
+    <p>– Robert Frost</p>
+  </div>
+
+  <div class="slide q4">
+    <h1>“Dream big. Work hard. Stay humble.”</h1>
+    <p>– Unknown</p>
+  </div>
+
+  <div class="slide q5">
+    <h1>“You are never too old to set another goal.”</h1>
+    <p>– C.S. Lewis</p>
+  </div>
+
+  <div class="slide q6">
+    <h1>“Be the change you wish to see in the world.”</h1>
+    <p>– Mahatma Gandhi</p>
+  </div>
+
+  <div class="slide q7">
+    <h1>“Start where you are. Use what you have. Do what you can.”</h1>
+    <p>– Arthur Ashe</p>
+  </div>
+
+  <div class="slide q8">
+    <h1>“Happiness depends upon ourselves.”</h1>
+    <p>– Aristotle</p>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    // Let intro stay for 10s, then fade into the first quote smoothly
+    setTimeout(() => {
+      // fade from intro to quote 1
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+
+      // continue normal cycle after that
+      setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }, 6000); // every 6 seconds
+    }, 10000); // wait 10s for intro
+  </script>
+</body>
+</html>
